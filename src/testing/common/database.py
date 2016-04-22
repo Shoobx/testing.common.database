@@ -203,7 +203,8 @@ class Database(object):
                     os.child_process.kill()
                     raise RuntimeError("*** failed to shutdown postgres (timeout) ***\n" + self.read_bootlog())
 
-                sleep(0.1)
+                # sleep the minimum time, postgres seems to quit fast
+                sleep(0.001)
         except OSError:
             pass
 
