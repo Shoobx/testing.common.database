@@ -163,7 +163,8 @@ class Database(object):
                 raise RuntimeError("*** failed to launch %s (timeout) ***\n" % self.name +
                                    self.read_bootlog())
 
-            sleep(0.1)
+            # sleep less time, postgres seems to start pretty fast
+            sleep(0.01)
 
     def prestart(self):
         if self.settings['port'] is None:
