@@ -8,6 +8,9 @@ About
 .. image:: https://codeclimate.com/github/tk0miya/testing.common.database/badges/gpa.svg
    :target: https://codeclimate.com/github/tk0miya/testing.common.database
 
+.. image:: https://api.codeclimate.com/v1/badges/f2c7eb2318e7d3e33c90/maintainability
+   :target: https://codeclimate.com/github/Shoobx/testing.common.database/maintainability
+   :alt: Maintainability
 
 Install
 =======
